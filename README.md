@@ -1,73 +1,84 @@
-# Welcome to your Lovable project
 
-## Project info
+# React Bug Squash Interview Challenge
 
-**URL**: https://lovable.dev/projects/e611cafe-9d1e-43cb-8d01-6ae623cd933f
+This project is designed as a technical challenge for senior React developer interviews. It contains a small but realistic React application with intentionally placed bugs that candidates need to identify and fix.
 
-## How can I edit this code?
+## Project Overview
 
-There are several ways of editing your application.
+This is a data table application featuring:
 
-**Use Lovable**
+- Paginated data display
+- Search and filter functionality
+- Settings panel to customize the UI
+- Intentional bugs of varying difficulty
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/e611cafe-9d1e-43cb-8d01-6ae623cd933f) and start prompting.
+## Getting Started
 
-Changes made via Lovable will be committed automatically to this repo.
+### Prerequisites
 
-**Use your preferred IDE**
+- Node.js (v14+)
+- npm or yarn
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### Installation
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+1. Clone the repository:
+```
+git clone <repository-url>
+```
 
-Follow these steps:
+2. Install dependencies:
+```
+npm install
+```
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+### Running the Application
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+Start the development server:
+```
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+This will start the application at `http://localhost:8080`.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+### Running Tests
 
-**Use GitHub Codespaces**
+Run the test suite:
+```
+npm test
+```
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+Some tests will fail due to intentional bugs in the code.
 
-## What technologies are used for this project?
+## The Challenge
 
-This project is built with:
+This application contains several intentional bugs that need to be fixed:
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+- Pagination issues
+- Performance problems due to unnecessary renders
+- State management bugs
+- Missing optimizations
+- And more...
 
-## How can I deploy this project?
+Your task is to:
 
-Simply open [Lovable](https://lovable.dev/projects/e611cafe-9d1e-43cb-8d01-6ae623cd933f) and click on Share -> Publish.
+1. Identify as many bugs as possible
+2. Fix the issues in a clean, maintainable way
+3. Make failing tests pass
+4. Explain your thought process and fixes
 
-## Can I connect a custom domain to my Lovable project?
+## Bug Difficulty Levels
 
-Yes, you can!
+Bugs range from:
+- **Easy**: Simple fixes like off-by-one errors
+- **Medium**: Fixing improper React patterns like direct state mutations
+- **Hard**: Identifying and fixing performance issues and stale closures
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+## Tips
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+- Use React DevTools to identify performance bottlenecks
+- Pay attention to React hooks and their dependencies
+- Look for state management issues
+- Check if functions are recreated unnecessarily
+- Observe how contexts are set up and used
+
+Good luck!
